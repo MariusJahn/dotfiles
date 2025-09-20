@@ -1,4 +1,4 @@
-# Go up N directories
+ # Go up N directories
 up() {
   local d=""
   local count=$1

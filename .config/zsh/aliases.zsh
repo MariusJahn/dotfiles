@@ -1,1 +1,1 @@
-alias dots='/ssd/repositories/dotfiles/copyDotfilesToRepo.sh'
+alias dots='/ssd/repositories/dotfiles/scripts/copyDotfilesToRepo.sh'
