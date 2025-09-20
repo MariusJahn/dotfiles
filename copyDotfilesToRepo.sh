@@ -7,6 +7,7 @@ cp -r ~/.config/nvim /ssd/repositories/dotfiles/nvim
 cp -r ~/.bashrc /ssd/repositories/dotfiles/bash
 
 # zsh
+cp -r ~/.config/zsh /ssd/repositories/dotfiles/.config
 cp -r ~/.zshrc /ssd/repositories/dotfiles/zsh
 cp -r ~/.zshrc.work /ssd/repositories/dotfiles/zsh
 cp -r ~/.zshrc.personal /ssd/repositories/dotfiles/zsh

@@ -1,0 +1,1 @@
+alias dots='/ssd/repositories/dotfiles/copyDotfilesToRepo.sh'
