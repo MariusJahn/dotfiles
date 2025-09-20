@@ -1,11 +1,10 @@
 echo "copy dotfiles into git repo..."
 
 # nvim
-#cp -r ~/.config/nvim ~/dotfiles
+cp -r ~/.config/nvim /ssd/repositories/dotfiles/nvim
 
 # bash
 cp -r ~/.bashrc /ssd/repositories/dotfiles/bash
-
 
 # zsh
 cp -r ~/.zshrc /ssd/repositories/dotfiles/zsh
