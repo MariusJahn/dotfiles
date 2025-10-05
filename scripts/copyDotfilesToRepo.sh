@@ -2,7 +2,6 @@ commit_and_push() {
     cd $HOME/ssd/repositories/dotfiles
     git add .
     git commit -m "update dots"
-    git push
 }
 
 echo "copy dotfiles into git repo..."
