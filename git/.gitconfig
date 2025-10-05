@@ -1,0 +1,7 @@
+[user]
+	name = Marius Jahn
+	email = mariusjahn@web.de
+[core]
+    autocrlf = input
+[init]
+    defaultBranch = main

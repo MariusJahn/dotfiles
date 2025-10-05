@@ -6,6 +6,9 @@ commit_and_push() {
 
 echo "copy dotfiles into git repo..."
 
+# git
+cp -r ~/.gitconfig ~/ssd/repositories/dotfiles/git/
+
 # nvim
 cp -r ~/.config/nvim ~/ssd/repositories/dotfiles/nvim
 
@@ -20,6 +23,6 @@ cp -r ~/.zshrc ~/.zshrc.work ~/.zshrc.personal ~/ssd/repositories/dotfiles/zsh
 cp -r ~/.config/kdeglobals ~/.config/kwinrc ~/.config/plasmarc \
       ~/.config/plasmashellrc ~/.local/share/konsole ~/.local/share/plasma ~/ssd/repositories/dotfiles/kde
 
-commit_and_push
+#commit_and_push
 
 echo "done!"

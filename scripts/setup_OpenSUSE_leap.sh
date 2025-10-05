@@ -75,14 +75,22 @@ configure_kde() {
 #~/.config/kwinrc — window manager (KWin) settings
 #~/.config/systemsettingsrc — KDE system settings
 
+git clone git@github.com:mariusjahn/dotfiles.git ~/.dotfiles/kde
+cd ~/.dotfiles/kde
+
+cp -r kdeglobals kwinrc plasmarc plasmashellrc ~/.config/
+cp -r konsole plasma ~/.local/share/
 
 
 }
 
-
 # ==================
 # Daily Apps
 # ==================
+
+install_daily_apps() {
+
+}
 
 # spotify
 # discord
@@ -99,6 +107,7 @@ configure_kde() {
 # Development Tools
 # ==================
 
+install_dev_tools() {
 # install neovim
 #zypper install -y neovim
 
@@ -113,6 +122,8 @@ configure_kde() {
 
 # install nodejs
 #nvm install node
+
+}
 
 # ==================
 # Creative Tools
