@@ -21,11 +21,14 @@ MICROLINUX="https://www.microlinux.fr/download"
 
 usage() {
   # Display help message
-  echo "Usage: ${0} OPTION"
   echo 'OpenSUSE Leap KDE post-install configuration.'
+  echo ''
+  echo "Usage: ${0} -option"
+  echo ''
   echo 'Options:'
   echo '  -1, --system-update   Install System Updates.'
   echo '  -2, --shell           Configure zsh.'
+  echo '  -3, --desktop         Configure Desktop.'
 
   #echo '  -2, --repos    Setup official and third-party repositories.'
   #echo '  -3, --prune    Remove unneeded applications.'
@@ -42,15 +45,15 @@ usage() {
 # Basic System Setup
 # ==================
 
-install_system_updates() {
-  zypper refresh
-  zypper update -y
-}
-
 
 # Nvidia Drivers
 # themes
 # workspace
+
+install_system_updates() {
+  zypper refresh
+  zypper update -y
+}
 
 configure_shell() {
   # Install git, zsh
@@ -65,6 +68,17 @@ configure_shell() {
   # add zsh-autosuggestions
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 }
+
+configure_kde() {
+#~/.config/kdeglobals — general KDE settings
+#~/.config/plasmarc — Plasma shell settings
+#~/.config/kwinrc — window manager (KWin) settings
+#~/.config/systemsettingsrc — KDE system settings
+
+
+
+}
+
 
 # ==================
 # Daily Apps
