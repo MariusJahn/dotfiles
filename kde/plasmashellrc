@@ -1,14 +1,17 @@
 [KPropertiesDialog]
-2 screens: Height=569
-2 screens: Width=608
+2 screens: Height=500
+2 screens: Width=555
 
 [PlasmaTransientsConfig]
-PreloadWeight=10
+PreloadWeight=0
 
 [PlasmaViews][Panel 103][Defaults]
 thickness=44
 
 [PlasmaViews][Panel 105][Defaults]
+thickness=44
+
+[PlasmaViews][Panel 123][Defaults]
 thickness=44
 
 [PlasmaViews][Panel 29][Defaults]
