@@ -6,6 +6,10 @@ commit_and_push() {
 
 echo "copy dotfiles into git repo..."
 
+# konsole
+cp -r ~/.local/share/konsole ~/ssd/repositories/dotfiles/.config
+cp -r ~/.config/konsolerc ~/ssd/repositories/dotfiles/konsole/
+
 # git
 cp -r ~/.gitconfig ~/ssd/repositories/dotfiles/git/
 

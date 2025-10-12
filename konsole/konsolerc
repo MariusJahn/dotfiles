@@ -1,0 +1,32 @@
+MenuBar=Disabled
+
+[Desktop Entry]
+DefaultProfile=work.profile
+
+[General]
+ConfigVersion=1
+
+[KFileDialog Settings]
+detailViewIconSize=16
+
+[MainWindow]
+1024x768 screen: Height=468
+1024x768 screen: Width=800
+1024x768 screen: XPosition=138
+1024x768 screen: YPosition=137
+2 screens: Height=641
+2 screens: Width=1302
+2 screens: XPosition=2073
+2 screens: YPosition=223
+DVI-D-0 HDMI-0=DVI-D-0
+DVI-D-1 HDMI-1=DVI-D-1
+MenuBar=Disabled
+RestorePositionForNextInstance=false
+default=default
+
+[Notification Messages]
+CloseAllEmptyTabs=true
+CloseAllTabs=true
+
+[UiSettings]
+ColorScheme=

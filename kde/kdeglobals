@@ -102,7 +102,7 @@ ColorSchemeHash=154cb4d8d3e569860cc378f981d35f572c5b9e1d
 toolBarFont=Noto Sans,10,-1,5,50,0,0,0,0,0,Regular
 
 [KDE]
-AnimationDurationFactor=0.7071067811865475
+AnimationDurationFactor=0.5
 LookAndFeelPackage=Sweet-Mars
 
 [KFileDialog Settings]
@@ -125,8 +125,14 @@ Sort reversed=false
 Speedbar Width=155
 View Style=DetailTree
 
+[KShortcutsDialog Settings]
+Dialog Size=600,480
+
 [PreviewSettings]
 MaximumRemoteSize=0
+
+[Sounds]
+Theme=freedesktop
 
 [WM]
 activeBackground=47,52,63

@@ -1,23 +1,40 @@
 [$Version]
 update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup,kwin.upd:replace-cascaded-zerocornered
 
+[Activities][LastVirtualDesktop]
+a29e5edc-2100-491f-949c-1352b90265b5=ae4c7074-6caa-428f-9b6e-68460d09cd17
+
 [Compositing]
 AnimationSpeed[$d]
 
 [Desktops]
 Id_1=ae4c7074-6caa-428f-9b6e-68460d09cd17
-Id_2=28e2e482-62c1-4420-af95-7209eab2f97f
+Id_2=eba1dfce-d0a6-431d-a25f-f6abc439ab02
 Name_1=Daily
-Name_2=Work
+Name_2=Arbeitsfläche 1
 Number=2
 Rows=2
+
+[Effect-translucency]
+Dialogs=99
+Inactive=99
+Menus=99
+
+[NightColor]
+Active=true
 
 [Plugins]
 blurEnabled=true
 kwin4_effect_squashEnabled=false
 kwin4_effect_translucencyEnabled=true
 magiclampEnabled=true
+sheetEnabled=true
+squashEnabled=false
+translucencyEnabled=true
 wobblywindowsEnabled=true
+
+[TabBox]
+LayoutName=thumbnails
 
 [Tiling]
 padding=4
