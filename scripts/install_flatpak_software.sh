@@ -1,6 +1,3 @@
-# Bazzite uses ujust and is an atomic desktop
-# Atomic Desktops let the OS untouched. You always work with Pods as in Toolbox / Distrobox
-
 usage() {
   # Display help message
   echo 'Bazzite post-install configuration.'
@@ -8,9 +5,6 @@ usage() {
   echo "Usage: ${0} -option"
   echo ''
   echo 'Options:'
-  echo '  -1, --flatpak   Install Flatpak Software.'
-  echo '  -2, --shell     Configure zsh.'
-
 
   #echo '  -2, --repos    Setup official and third-party repositories.'
   #echo '  -3, --prune    Remove unneeded applications.'
@@ -20,11 +14,8 @@ usage() {
   #echo '  -7, --kderc    Install custom KDE profile.'
   #echo '  -8, --users    Apply custom KDE profile for existing users.'
   #echo '  -9, --magic    Perform all of the above in one go.'
+  echo '  -a, --all             To install all Packages.'
   echo '  -h, --help            Show this message.'
-}
-
-install_git() {
-    sudo dnf install git-all
 }
 
 install_flatpak_software() {
@@ -34,20 +25,6 @@ install_flatpak_software() {
         com.visualstudio.code \
         org.gimp.GIMP \
         -y
-}
-
-configure_shell() {
-  # Install git, zsh
-  dnf install -y zsh
-
-  # switch to zsh as default shell
-  chsh -s $(which zsh)
-
-  # Install oh-my-zsh or starship
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-  # add zsh-autosuggestions
-  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 }
 
 # Make sure the script is being executed with superuser privileges.
@@ -65,11 +42,9 @@ then
 fi
 OPTION="${1}"
 case "${OPTION}" in
-  -1|--flatpak) 
+  -a|--all) 
     install_flatpak_software
-    ;;
-  -2|--shell) 
-    configure_shell
+    exit 0
     ;;
   -h|--help) 
     usage
