@@ -19,11 +19,12 @@ usage() {
 }
 
 install_flatpak_software() {
-    # vscode spotify krita gimp
+    # vscode spotify krita gimp gitkraken
     flatpak install flathub \
         org.kde.krita \
         com.visualstudio.code \
         org.gimp.GIMP \
+        com.axosoft.GitKraken \
         -y
 }
 
