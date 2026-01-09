@@ -95,7 +95,8 @@ ForegroundVisited=68,71,90
 
 [DirSelect Dialog]
 DirSelectDialog Size=1076,720
-History Items[$e]=file:$HOME/ssd/repositories/overTheWire/natas,file:$HOME/ssd/repositories/dotfiles,file:$HOME/repositories,file:$HOME/ssd/repositories/dotfiles,file:$HOME/ssd/repositories/dotfiles,file:///hdd2,file:$HOME/hdd2,file:///ssd/repositories,file:///run/media,file:///run/media/mjahn/notSafeBeCareful
+History Items[$e]=file:$HOME/hdd/steam,file:$HOME/hdd,file:///hdd2,file:///hdd,file:$HOME/ssd/repositories/strudl,file:$HOME/ssd/repositories/strudl,file:$HOME/Documents,file:$HOME/hdd/games,file:$HOME/ssd/games,file:$HOME/ssd/games,file:$HOME/Music/Mixxx,file:$HOME/ssd/repositories/overTheWire/natas,file:$HOME/ssd/repositories/dotfiles,file:$HOME/repositories,file:$HOME/ssd/repositories/dotfiles,file:$HOME/ssd/repositories/dotfiles,file:$HOME/hdd2,file:///ssd/repositories,file:///run/media,file:///run/media/mjahn/notSafeBeCareful
+Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00j\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [General]
 ColorSchemeHash=154cb4d8d3e569860cc378f981d35f572c5b9e1d
@@ -117,7 +118,7 @@ Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
-Show hidden files=false
+Show hidden files=true
 Sort by=Name
 Sort directories first=true
 Sort hidden files last=false

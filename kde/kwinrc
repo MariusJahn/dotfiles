@@ -15,10 +15,15 @@ Name_2=Arbeitsfläche 1
 Number=2
 Rows=2
 
+[Effect-blur]
+NoiseStrength=3
+
 [Effect-translucency]
-Dialogs=99
-Inactive=99
-Menus=99
+ComboboxPopups=95
+Dialogs=96
+Inactive=95
+IndividualMenuConfig=true
+Menus=95
 
 [NightColor]
 Active=true
